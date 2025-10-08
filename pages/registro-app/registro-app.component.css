@@ -1,0 +1,29 @@
+.registro-container {
+  max-width: 960px;
+  margin: 24px auto;
+  padding: 16px;
+}
+
+.tabs{
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+
+  a {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    background-color: #f6f6f6;
+    text-decoration: none;
+    color: #494747;
+
+    &.active {
+      background: #fff;
+      border-color: #8e8b8b;
+      font-weight: bold;
+    }
+
+
+  }
+
+
+}

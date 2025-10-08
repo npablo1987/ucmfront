@@ -1,0 +1,52 @@
+<h2>Datos Personales:</h2>
+
+<form [formGroup]="form" class="grid">
+
+  <label>
+    Nombre:
+    <input type="text" formControlName="nombres" placeholder="Juan Pablo">
+  </label>
+
+  <label>
+    Apellido Paterno:
+    <input type="text" formControlName="apellidoPaterno" placeholder="Perez">
+  </label>
+
+  <label>
+    Apellido Materno:
+    <input type="text" formControlName="apellidoMaterno" placeholder="Lopez">
+  </label>
+
+  <label>
+    Telefono:
+    <input type="tel" formControlName="telefono" placeholder="+56 9738373">
+  </label>
+
+  <label>
+    Correo Electronico:
+
+    <input type="email" formControlName="correo" placeholder="pavilchjes@gmail.com">
+  </label>
+
+  <label>
+    Región:
+    <select formControlName="region">
+      <option value="">Seleccione </option>
+      @for (r of regiones; track r){
+        <option [value]="r">{{ r }}</option>
+      }
+    </select>
+  </label>
+
+  <label>
+    Comunas:
+    <select formControlName="comuna">
+      <option value="">Seleccione </option>
+      @for (c of comunas; track c){
+        <option [value]="c">{{ c }}</option>
+      }
+    </select>
+  </label>
+
+
+</form>
